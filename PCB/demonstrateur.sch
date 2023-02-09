@@ -1,0 +1,619 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM:LoRa-E5-Mini U1
+U 1 1 6382555F
+P 4350 3600
+F 0 "U1" H 4350 4865 50  0000 C CNN
+F 1 "LoRa-E5-Mini" H 4350 4774 50  0000 C CNN
+F 2 "STM:LoRa-E5-Mini" H 4350 4900 50  0000 C CNN
+F 3 "" H 4350 4900 50  0001 C CNN
+	1    4350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADA:ada3328 U2
+U 1 1 6388D5AB
+P 1900 1800
+F 0 "U2" H 1900 2265 50  0000 C CNN
+F 1 "ada3328" H 1900 2174 50  0000 C CNN
+F 2 "ADA:ada3328" H 1900 2250 50  0000 C CNN
+F 3 "" H 1900 2250 50  0001 C CNN
+	1    1900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADA:ada3328 U3
+U 1 1 6388DC18
+P 1900 3000
+F 0 "U3" H 1900 3465 50  0000 C CNN
+F 1 "ada3328" H 1900 3374 50  0000 C CNN
+F 2 "ADA:ada3328" H 1900 3450 50  0000 C CNN
+F 3 "" H 1900 3450 50  0001 C CNN
+	1    1900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADA:ada3328 U4
+U 1 1 6388E483
+P 1900 4200
+F 0 "U4" H 1900 4665 50  0000 C CNN
+F 1 "ada3328" H 1900 4574 50  0000 C CNN
+F 2 "ADA:ada3328" H 1900 4650 50  0000 C CNN
+F 3 "" H 1900 4650 50  0001 C CNN
+	1    1900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 6389A61E
+P 7950 1950
+F 0 "J1" H 8030 1942 50  0000 L CNN
+F 1 "5VPermanent" H 8030 1851 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 7950 1950 50  0000 C CNN
+F 3 "~" H 7950 1950 50  0001 C CNN
+	1    7950 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 3400 0    50   Input ~ 0
+MISO
+Text GLabel 3750 3600 0    50   Output ~ 0
+MOSI
+Wire Wire Line
+	3750 3400 3850 3400
+Wire Wire Line
+	3750 3600 3850 3600
+Text GLabel 1450 1600 0    50   Output ~ 0
+MISO
+Text GLabel 1450 1750 0    50   Input ~ 0
+MOSI
+Wire Wire Line
+	1450 1600 1550 1600
+Wire Wire Line
+	1450 1750 1550 1750
+Text GLabel 1450 2800 0    50   Output ~ 0
+MISO
+Text GLabel 1450 2950 0    50   Input ~ 0
+MOSI
+Wire Wire Line
+	1450 2800 1550 2800
+Wire Wire Line
+	1450 2950 1550 2950
+Text GLabel 1450 4000 0    50   Output ~ 0
+MISO
+Text GLabel 1450 4150 0    50   Input ~ 0
+MOSI
+Wire Wire Line
+	1450 4000 1550 4000
+Wire Wire Line
+	1450 4150 1550 4150
+$Comp
+L power:GND #PWR0101
+U 1 1 638A0AF5
+P 7750 2050
+F 0 "#PWR0101" H 7750 1800 50  0001 C CNN
+F 1 "GND" H 7755 1877 50  0000 C CNN
+F 2 "" H 7750 2050 50  0001 C CNN
+F 3 "" H 7750 2050 50  0001 C CNN
+	1    7750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 638A1287
+P 2350 4150
+F 0 "#PWR0102" H 2350 3900 50  0001 C CNN
+F 1 "GND" H 2355 3977 50  0000 C CNN
+F 2 "" H 2350 4150 50  0001 C CNN
+F 3 "" H 2350 4150 50  0001 C CNN
+	1    2350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 638A141C
+P 2350 2950
+F 0 "#PWR0103" H 2350 2700 50  0001 C CNN
+F 1 "GND" H 2355 2777 50  0000 C CNN
+F 2 "" H 2350 2950 50  0001 C CNN
+F 3 "" H 2350 2950 50  0001 C CNN
+	1    2350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 638A15BD
+P 2350 1750
+F 0 "#PWR0104" H 2350 1500 50  0001 C CNN
+F 1 "GND" H 2355 1577 50  0000 C CNN
+F 2 "" H 2350 1750 50  0001 C CNN
+F 3 "" H 2350 1750 50  0001 C CNN
+	1    2350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1750 2350 1750
+Wire Wire Line
+	2250 2950 2350 2950
+Wire Wire Line
+	2250 4150 2350 4150
+$Comp
+L power:+5V #PWR0105
+U 1 1 638A1FE9
+P 2350 4000
+F 0 "#PWR0105" H 2350 3850 50  0001 C CNN
+F 1 "+5V" H 2365 4173 50  0000 C CNN
+F 2 "" H 2350 4000 50  0001 C CNN
+F 3 "" H 2350 4000 50  0001 C CNN
+	1    2350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 638A2632
+P 2350 2800
+F 0 "#PWR0106" H 2350 2650 50  0001 C CNN
+F 1 "+5V" H 2365 2973 50  0000 C CNN
+F 2 "" H 2350 2800 50  0001 C CNN
+F 3 "" H 2350 2800 50  0001 C CNN
+	1    2350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 638A2813
+P 2350 1600
+F 0 "#PWR0107" H 2350 1450 50  0001 C CNN
+F 1 "+5V" H 2365 1773 50  0000 C CNN
+F 2 "" H 2350 1600 50  0001 C CNN
+F 3 "" H 2350 1600 50  0001 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1600 2350 1600
+Wire Wire Line
+	2250 2800 2350 2800
+Wire Wire Line
+	2250 4000 2350 4000
+Text GLabel 2350 2050 2    50   Input ~ 0
+CLK
+Wire Wire Line
+	2250 2050 2350 2050
+Text GLabel 2350 3250 2    50   Input ~ 0
+CLK
+Wire Wire Line
+	2250 3250 2350 3250
+Text GLabel 2350 4450 2    50   Input ~ 0
+CLK
+Wire Wire Line
+	2250 4450 2350 4450
+Text GLabel 3750 3000 0    50   Output ~ 0
+CLK
+Wire Wire Line
+	3750 3000 3850 3000
+Text GLabel 3750 2600 0    50   Output ~ 0
+CS1
+Text GLabel 3750 2800 0    50   Output ~ 0
+CS2
+Text GLabel 4950 3400 2    50   Output ~ 0
+CS3
+Wire Wire Line
+	3750 2600 3850 2600
+Wire Wire Line
+	3750 2800 3850 2800
+Wire Wire Line
+	4850 3400 4950 3400
+Text GLabel 4950 4400 2    50   BiDi ~ 0
+SDA
+Text GLabel 4950 4600 2    50   Output ~ 0
+SCL
+Wire Wire Line
+	4850 4400 4950 4400
+Wire Wire Line
+	4850 4600 4950 4600
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 638B2ACD
+P 8000 4900
+F 0 "J6" H 8080 4892 50  0000 L CNN
+F 1 "AnemometerSignal" H 8080 4801 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 8000 4900 50  0000 C CNN
+F 3 "~" H 8000 4900 50  0001 C CNN
+	1    8000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 638B2AD9
+P 7800 5000
+F 0 "#PWR0108" H 7800 4750 50  0001 C CNN
+F 1 "GND" H 7805 4827 50  0000 C CNN
+F 2 "" H 7800 5000 50  0001 C CNN
+F 3 "" H 7800 5000 50  0001 C CNN
+	1    7800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 638B3C6E
+P 7950 2650
+F 0 "J2" H 8030 2642 50  0000 L CNN
+F 1 "5VRelay" H 8030 2551 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 7950 2650 50  0000 C CNN
+F 3 "~" H 7950 2650 50  0001 C CNN
+	1    7950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 638B3C74
+P 7750 2650
+F 0 "#PWR0109" H 7750 2500 50  0001 C CNN
+F 1 "+5V" H 7765 2823 50  0000 C CNN
+F 2 "" H 7750 2650 50  0001 C CNN
+F 3 "" H 7750 2650 50  0001 C CNN
+	1    7750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 638B3C7A
+P 7750 2750
+F 0 "#PWR0110" H 7750 2500 50  0001 C CNN
+F 1 "GND" H 7755 2577 50  0000 C CNN
+F 2 "" H 7750 2750 50  0001 C CNN
+F 3 "" H 7750 2750 50  0001 C CNN
+	1    7750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 638BB410
+P 7950 4300
+F 0 "J4" H 8030 4292 50  0000 L CNN
+F 1 "12V" H 8030 4201 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7950 4300 50  0000 C CNN
+F 3 "~" H 7950 4300 50  0001 C CNN
+	1    7950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 638BB416
+P 7750 4400
+F 0 "#PWR0111" H 7750 4150 50  0001 C CNN
+F 1 "GND" H 7755 4227 50  0000 C CNN
+F 2 "" H 7750 4400 50  0001 C CNN
+F 3 "" H 7750 4400 50  0001 C CNN
+	1    7750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 638BD1A2
+P 7950 3550
+F 0 "J3" H 8030 3542 50  0000 L CNN
+F 1 "Bat" H 8030 3451 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7950 3550 50  0000 C CNN
+F 3 "~" H 7950 3550 50  0001 C CNN
+	1    7950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 638BD1A8
+P 7750 3650
+F 0 "#PWR0112" H 7750 3400 50  0001 C CNN
+F 1 "GND" H 7755 3477 50  0000 C CNN
+F 2 "" H 7750 3650 50  0001 C CNN
+F 3 "" H 7750 3650 50  0001 C CNN
+	1    7750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0113
+U 1 1 638C287D
+P 7750 4300
+F 0 "#PWR0113" H 7750 4150 50  0001 C CNN
+F 1 "+12V" H 7765 4473 50  0000 C CNN
+F 2 "" H 7750 4300 50  0001 C CNN
+F 3 "" H 7750 4300 50  0001 C CNN
+	1    7750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0114
+U 1 1 638C38BC
+P 7750 3550
+F 0 "#PWR0114" H 7750 3400 50  0001 C CNN
+F 1 "+12V" H 7765 3723 50  0000 C CNN
+F 2 "" H 7750 3550 50  0001 C CNN
+F 3 "" H 7750 3550 50  0001 C CNN
+	1    7750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J5
+U 1 1 638C8219
+P 8000 5800
+F 0 "J5" H 8080 5842 50  0000 L CNN
+F 1 "Humidity" H 8080 5751 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 8000 5800 50  0000 C CNN
+F 3 "~" H 8000 5800 50  0001 C CNN
+	1    8000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DFR0569:DFR0569 U5
+U 1 1 638C9A2E
+P 4350 1300
+F 0 "U5" H 4350 1355 50  0000 C CNN
+F 1 "DFR0569" H 4350 1264 50  0000 C CNN
+F 2 "DFR0569:DFR0569" H 4350 1173 50  0000 C CNN
+F 3 "" H 4350 1300 50  0001 C CNN
+	1    4350 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2650 7000 2    50   BiDi ~ 0
+SDA
+$Comp
+L power:+5VP #PWR0115
+U 1 1 638CE497
+P 2950 7100
+F 0 "#PWR0115" H 2950 6950 50  0001 C CNN
+F 1 "+5VP" H 2965 7273 50  0000 C CNN
+F 2 "" H 2950 7100 50  0001 C CNN
+F 3 "" H 2950 7100 50  0001 C CNN
+	1    2950 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 7100 2950 7100
+$Comp
+L power:GND #PWR0116
+U 1 1 638D3A52
+P 2650 7200
+F 0 "#PWR0116" H 2650 6950 50  0001 C CNN
+F 1 "GND" H 2655 7027 50  0000 C CNN
+F 2 "" H 2650 7200 50  0001 C CNN
+F 3 "" H 2650 7200 50  0001 C CNN
+	1    2650 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0117
+U 1 1 638D5A39
+P 3950 1600
+F 0 "#PWR0117" H 3950 1450 50  0001 C CNN
+F 1 "+12V" H 3965 1773 50  0000 C CNN
+F 2 "" H 3950 1600 50  0001 C CNN
+F 3 "" H 3950 1600 50  0001 C CNN
+	1    3950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 638D60F3
+P 3950 1750
+F 0 "#PWR0118" H 3950 1500 50  0001 C CNN
+F 1 "GND" H 3955 1577 50  0000 C CNN
+F 2 "" H 3950 1750 50  0001 C CNN
+F 3 "" H 3950 1750 50  0001 C CNN
+	1    3950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR0119
+U 1 1 638D912E
+P 4750 1600
+F 0 "#PWR0119" H 4750 1450 50  0001 C CNN
+F 1 "+5VP" H 4765 1773 50  0000 C CNN
+F 2 "" H 4750 1600 50  0001 C CNN
+F 3 "" H 4750 1600 50  0001 C CNN
+	1    4750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 638D9939
+P 4750 1750
+F 0 "#PWR0120" H 4750 1500 50  0001 C CNN
+F 1 "GND" H 4755 1577 50  0000 C CNN
+F 2 "" H 4750 1750 50  0001 C CNN
+F 3 "" H 4750 1750 50  0001 C CNN
+	1    4750 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1600 4750 1600
+Wire Wire Line
+	4750 1750 4650 1750
+Wire Wire Line
+	3950 1600 4050 1600
+Wire Wire Line
+	4050 1750 3950 1750
+$Comp
+L power:GND #PWR0121
+U 1 1 638DF147
+P 7800 5900
+F 0 "#PWR0121" H 7800 5650 50  0001 C CNN
+F 1 "GND" H 7805 5727 50  0000 C CNN
+F 2 "" H 7800 5900 50  0001 C CNN
+F 3 "" H 7800 5900 50  0001 C CNN
+	1    7800 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2650 6900 2    50   Output ~ 0
+SCL
+$Comp
+L power:GND #PWR0122
+U 1 1 638A0FF2
+P 4350 4800
+F 0 "#PWR0122" H 4350 4550 50  0001 C CNN
+F 1 "GND" H 4355 4627 50  0000 C CNN
+F 2 "" H 4350 4800 50  0001 C CNN
+F 3 "" H 4350 4800 50  0001 C CNN
+	1    4350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR0123
+U 1 1 638E3836
+P 3650 4600
+F 0 "#PWR0123" H 3650 4450 50  0001 C CNN
+F 1 "+5VP" H 3665 4773 50  0000 C CNN
+F 2 "" H 3650 4600 50  0001 C CNN
+F 3 "" H 3650 4600 50  0001 C CNN
+	1    3650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4600 3850 4600
+$Comp
+L power:+3.3V #PWR0124
+U 1 1 638E5568
+P 7800 5700
+F 0 "#PWR0124" H 7800 5550 50  0001 C CNN
+F 1 "+3.3V" H 7815 5873 50  0000 C CNN
+F 2 "" H 7800 5700 50  0001 C CNN
+F 3 "" H 7800 5700 50  0001 C CNN
+	1    7800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 638E5BBF
+P 3500 4400
+F 0 "#PWR0125" H 3500 4250 50  0001 C CNN
+F 1 "+3.3V" H 3515 4573 50  0000 C CNN
+F 2 "" H 3500 4400 50  0001 C CNN
+F 3 "" H 3500 4400 50  0001 C CNN
+	1    3500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4400 3500 4400
+$Comp
+L power:+5VP #PWR0126
+U 1 1 638E6DF3
+P 7750 1950
+F 0 "#PWR0126" H 7750 1800 50  0001 C CNN
+F 1 "+5VP" H 7765 2123 50  0000 C CNN
+F 2 "" H 7750 1950 50  0001 C CNN
+F 3 "" H 7750 1950 50  0001 C CNN
+	1    7750 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 4200 2    50   Input ~ 0
+AN
+Wire Wire Line
+	4950 4200 4850 4200
+Text GLabel 7800 4900 0    50   Output ~ 0
+AN
+Text GLabel 4950 2800 2    50   Output ~ 0
+Relay
+Text GLabel 4950 2600 2    50   BiDi ~ 0
+Humidity
+Wire Wire Line
+	4850 2600 4950 2600
+Wire Wire Line
+	4850 2800 4950 2800
+Text GLabel 7650 5800 0    50   BiDi ~ 0
+Humidity
+Wire Wire Line
+	7650 5800 7800 5800
+Text GLabel 1450 1900 0    50   Input ~ 0
+CS1
+Text GLabel 1450 3100 0    50   Input ~ 0
+CS2
+Wire Wire Line
+	1450 3100 1550 3100
+Text GLabel 1450 4300 0    50   Input ~ 0
+CS3
+Wire Wire Line
+	1450 4300 1550 4300
+Wire Wire Line
+	1450 1900 1550 1900
+Wire Wire Line
+	1650 5550 1750 5550
+Text GLabel 1650 5550 0    50   Input ~ 0
+Relay
+$Comp
+L ada3295:ADA-3295 IC2
+U 1 1 638C0EC3
+P 2650 7200
+F 0 "IC2" H 3150 7465 50  0000 C CNN
+F 1 "ADA-3295" H 3150 7374 50  0000 C CNN
+F 2 "ada3295:ADA3295" H 3500 7300 50  0000 L CNN
+F 3 "https://learn.adafruit.com/adafruit-pcf8523-real-time-clock/downloads" H 3500 7200 50  0001 L CNN
+F 4 "Real Time Clock module" H 3500 7100 50  0001 L CNN "Description"
+F 5 "3.5" H 3500 7000 50  0001 L CNN "Height"
+F 6 "Adafruit" H 3500 6900 50  0001 L CNN "Manufacturer_Name"
+F 7 "ADA-3295" H 3500 6800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3500 6700 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 3500 6600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3500 6500 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 3500 6400 50  0001 L CNN "Arrow Price/Stock"
+F 12 "" H 3500 6300 50  0001 L CNN "Mouser Testing Part Number"
+F 13 "" H 3500 6200 50  0001 L CNN "Mouser Testing Price/Stock"
+	1    2650 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 638DCBBC
+P 1750 5750
+F 0 "#PWR0127" H 1750 5500 50  0001 C CNN
+F 1 "GND" H 1755 5577 50  0000 C CNN
+F 2 "" H 1750 5750 50  0001 C CNN
+F 3 "" H 1750 5750 50  0001 C CNN
+	1    1750 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR0128
+U 1 1 638DC465
+P 1750 5450
+F 0 "#PWR0128" H 1750 5300 50  0001 C CNN
+F 1 "+5VP" H 1765 5623 50  0000 C CNN
+F 2 "" H 1750 5450 50  0001 C CNN
+F 3 "" H 1750 5450 50  0001 C CNN
+	1    1750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L seed-connector:101020011 IC1
+U 1 1 638C7187
+P 1750 5450
+F 0 "IC1" H 2478 5346 50  0000 L CNN
+F 1 "101020011" H 2478 5255 50  0000 L CNN
+F 2 "seed-connector:HDRV4W80P0X254_1X4_1200X500X1550P" H 2500 5550 50  0000 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/101020011.pdf" H 2500 5450 50  0001 L CNN
+F 4 "Multiple Function Sensor Development Tools Grove - Temp&Humi Sensor" H 2500 5350 50  0001 L CNN "Description"
+F 5 "15.5" H 2500 5250 50  0001 L CNN "Height"
+F 6 "Seeed Studio" H 2500 5150 50  0001 L CNN "Manufacturer_Name"
+F 7 "101020011" H 2500 5050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "713-101020011" H 2500 4950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Seeed-Studio/101020011?qs=1%252B9yuXKSi8Dq%252B99bte6U5Q%3D%3D" H 2500 4850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "101020011" H 2500 4750 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/101020011/seeed-technology-limited?region=nac" H 2500 4650 50  0001 L CNN "Arrow Price/Stock"
+F 12 "" H 2500 4550 50  0001 L CNN "Mouser Testing Part Number"
+F 13 "" H 2500 4450 50  0001 L CNN "Mouser Testing Price/Stock"
+	1    1750 5450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

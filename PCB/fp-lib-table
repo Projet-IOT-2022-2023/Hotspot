@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name STM)(type KiCad)(uri ${KIPRJMOD}/STM.pretty)(options "")(descr ""))
+  (lib (name ADA)(type KiCad)(uri ${KIPRJMOD}/ADA.pretty)(options "")(descr ""))
+  (lib (name seed-connector)(type KiCad)(uri ${KIPRJMOD}/seed-connector)(options "")(descr ""))
+  (lib (name DFR0569)(type KiCad)(uri ${KIPRJMOD}/DFR0569.pretty)(options "")(descr ""))
+  (lib (name ada3295)(type KiCad)(uri ${KIPRJMOD}/ada3295)(options "")(descr ""))
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADA-3295
+D Real Time Clock module
+K
+F https://learn.adafruit.com/adafruit-pcf8523-real-time-clock/downloads
+$ENDCMP
+#
+#End Doc Library

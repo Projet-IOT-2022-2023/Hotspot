@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name "STM")(type "Legacy")(uri "${KIPRJMOD}/STM.lib")(options "")(descr ""))
+  (lib (name "ADA")(type "Legacy")(uri "${KIPRJMOD}/ADA.lib")(options "")(descr ""))
+  (lib (name "seed-connector")(type "Legacy")(uri "${KIPRJMOD}/seed-connector/101020011.lib")(options "")(descr ""))
+  (lib (name "ada3295")(type "Legacy")(uri "${KIPRJMOD}/ada3295/ADA-3295.lib")(options "")(descr ""))
+  (lib (name "DFR0569")(type "Legacy")(uri "${KIPRJMOD}/DFR0569.lib")(options "")(descr ""))
+  (lib (name "demonstrateur-rescue")(type "Legacy")(uri "${KIPRJMOD}/demonstrateur-rescue.lib")(options "")(descr ""))
+)
