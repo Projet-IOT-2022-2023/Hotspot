@@ -1,0 +1,73 @@
+version: "2.1"
+
+services:
+
+  wireguard:
+
+    image: lscr.io/linuxserver/wireguard:latest
+    container_name: wireguard
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+
+    environment:
+      - PUID=1000
+      - PGID=1003
+      - TZ=Europe/Paris
+      - SERVERURL=auto #optional
+      - SERVERPORT=51820 #optional
+      - PEERS=1 #optional
+      - PEERDNS=auto #optional
+      - INTERNAL_SUBNET=10.13.13.0 #optional
+      - ALLOWEDIPS=0.0.0.0/0 #optional
+
+    volumes:
+      - ./wireguard/config:/config
+      - /lib/modules:/lib/modules #optional
+
+    ports:
+      - 51820:51820/udp
+
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+
+    restart: unless-stopped
+
+  influxdb:
+
+    image: influxdb:latest
+    container_name: influxdb-esad
+
+    ports:
+     - '8086:8086' #Port de influxDB
+
+    volumes:
+     - ./influxdb-storage:/var/lib/influxdb 
+
+    restart : always
+
+    environment:
+     - INFLUXDB_DB=buttons 
+     - INFLUXDB_ADMIN_USER=${INFLUXDB_USERNAME} 
+     - INFLUXDB_ADMIN_PASSWORD=${INFLUXDB_PASSWORD} 
+
+  grafana:
+
+    image: grafana/grafana:latest
+    user: '0'
+    container_name: grafana-esad
+    hostname: grafana
+
+    ports:
+     - '3000:3000' #Port de grafana
+
+    volumes:
+     - ./grafana-storage:/var/lib/grafana:rw
+     - ./grafana-provisioning/:/etc/grafana/provisioning:rw
+
+    depends_on:
+     - influxdb
+
+    environment:
+     - GF_SECURITY_ADMIN_USER=${GRAFANA_USERNAME}
+     - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}

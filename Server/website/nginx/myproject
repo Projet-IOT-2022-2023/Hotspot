@@ -1,0 +1,24 @@
+server {
+    listen 80;
+    server_name theghostsoldier.net www.theghostsoldier.net;
+    return 302 https://$server_name$request_uri;
+}
+
+server {
+
+    # SSL configuration
+
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    ssl_certificate         /etc/ssl/cert.pem;
+    ssl_certificate_key     /etc/ssl/key.pem;
+    ssl_client_certificate /etc/ssl/cloudflare.crt;
+    ssl_verify_client on;
+
+    server_name theghostsoldier.net www.theghostsoldier.net;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/home/pi/myproject/myproject.sock;
+    }
+}

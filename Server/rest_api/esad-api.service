@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve myproject
+After=network.target
+
+[Service]
+User=pi
+Group=www-data
+WorkingDirectory=/home/pi/esad-api
+Environment="PATH=/home/pi/esad-api/myprojectenv/bin"
+ExecStart=/home/pi/esad-api/myprojectenv/bin/uwsgi --ini esad-api.ini
+
+[Install]
+WantedBy=multi-user.target
